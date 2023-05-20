@@ -1,0 +1,115 @@
+Delivered-To: kumarkishansah0309@gmail.com
+Received: by 2002:ab0:7a71:0:0:0:0:0 with SMTP id c17csp77486uat;
+        Mon, 15 May 2023 23:27:19 -0700 (PDT)
+X-Received: by 2002:a67:f4c4:0:b0:436:2c6f:205f with SMTP id s4-20020a67f4c4000000b004362c6f205fmr7329098vsn.5.1684218439381;
+        Mon, 15 May 2023 23:27:19 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1684218439; cv=none;
+        d=google.com; s=arc-20160816;
+        b=AkGtnU3Jz3lIPHXoPanVHlNLC9suV0nEaje1p/3AwaVuSHnKpJ9BIggMSM3BRosPub
+         5KoPPBPq0kno2mQ7D7zpsCbXXGOvYzZXQfyBwZzQaG96OITf73zP1HLzd+LXuE6LiZiK
+         AXI24GUjKTWXSlFjKtU4ABs7GPyNyRf+jCDiL39d0VlbfmBZN/CmFqJGbBm2TW9k/x9S
+         D0MEvtIbroYV+eHcGusWfhiLNsO91MShi0+qw10KW0nRp7/BHJfhJwp8P9iEgjG8jrpE
+         vfp2y43E/nPugx9KkK2rG93tIzOqJShSwWMxgbkvgnNNeB0U5aQqBkoprIil8Cd15q5X
+         Ultg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=g+0Coge2xZs/6779BlFSdeTBBmDAxG2/Noj4XRpaGiI=;
+        b=qY9rqS7r2CJtmuy+Ox5cLexWEf1AIAQlBB+WgrrD0v3FYYm97w7uKuF6bs+9ajZiqD
+         PZuSyBNZxfG5M7s5cvvfwXJ4n82XCIgI04hxUDksk6YisEM/7dmcuNFZMgNvVgrdBTNL
+         3gNbKO3n7uej5MAM+TqvpRZgE1J6kFP5EOqEVm1eyF1ksuuY2ZvCwA5arRAwV4qLlcXJ
+         3H/pr3R4AUV8qAiS0UNtv/gSxNxoDZoM6Edqg1wvrb1zUlMYsxmvvpxjL5CjfynxacPS
+         pUi1n7xukjJKWpRWUu+tOEOEdtXjJbAXxvaUFL4puabEVuznV6u0Mzr7j29CQzw2ApEo
+         1DNQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=lcKmk2ID;
+       spf=pass (google.com: domain of sahuswapna2005@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sahuswapna2005@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <sahuswapna2005@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id bl16-20020a056102509000b004343d076748sor6003675vsb.1.2023.05.15.23.27.19
+        for <kumarkishansah0309@gmail.com>
+        (Google Transport Security);
+        Mon, 15 May 2023 23:27:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sahuswapna2005@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=lcKmk2ID;
+       spf=pass (google.com: domain of sahuswapna2005@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sahuswapna2005@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1684218439; x=1686810439;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=g+0Coge2xZs/6779BlFSdeTBBmDAxG2/Noj4XRpaGiI=;
+        b=lcKmk2IDjIJCU7E3rWVLWyFg1vsRcoAd3g6MubOSA/6fqUYu1GNK89iGaXcheb+M37
+         Ut11azndKkTk6o9QB+gfN67KIKGGsT7QsrOCNBX5Jpog13SC9dCMav10t64lckeVKJJO
+         dudtkbcmx0+8w2TVC8I+AOjbNJxIIl1XeJNAJtb3QgvCz/dp47kvNvVG74e/roFuo5FC
+         UO4e1+vRg6VuidANfiX5e3oTx8+DGOfvbDsAvj3egUGxXGHBvcDaUBfts1sQe1E+6T6S
+         HeWyM2foBeE3odXXy9Xkf+mH2s69eQtf2G7BFN+d/GKdj4bQQKuX2MwWA8O1fO4yl0wW
+         c0Ww==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1684218439; x=1686810439;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=g+0Coge2xZs/6779BlFSdeTBBmDAxG2/Noj4XRpaGiI=;
+        b=MSX1b227iHVnBZlNIDefrhNE4KWi0oCOjNeS/Dl10ocUmZZqE+luJ7g8vz9TJ3G7TY
+         slzfjAq23vwGeTMN8niztF309TmCl8Pn78Fi/QJAlFBVwT0fejE9FwW9VgAIpwrNHHH2
+         QzLMP7jaA7wfSpbnMYSb1p7N0XrsK71JZ0KIhxqf/Mkob0bCG3w+nJkmr4bjoZ02g4+t
+         wll+lpUm4lI69mdW5997yrZHuQOdLYai48q6O9Ft7ivsyeSHdVC1wp8pexqbS3WtkwyG
+         0LVWVv7uX8ytgnYUfSEiFaH3pRDH+W6KnH6XOfwjDBhLMxXeU7hHTskAXIHW8j4556YL
+         cADw==
+X-Gm-Message-State: AC+VfDyGydOPa4/EtFkJ6SVVAuL1SywTRuPakM+OttmZnNEcTgeC4MKC
+	HgfPQVga2fwtMK+AzCDQc7JMiTkL29cRKNnrR4pox6wa
+X-Google-Smtp-Source: ACHHUZ4oEZ69CkP0SSihlnXIpQY0mJ85pnxrLQwTg9nxapjEO0mp7oIRTFfAIAvbnYSqU0RP4uUajpnS2toMgslo/d4=
+X-Received: by 2002:a05:6102:e4e:b0:435:37ba:2fc1 with SMTP id
+ p14-20020a0561020e4e00b0043537ba2fc1mr13282883vst.26.1684218438757; Mon, 15
+ May 2023 23:27:18 -0700 (PDT)
+MIME-Version: 1.0
+References: <CACvksrpe_5Tgh7qw3n5as7SngGQAneFQL-dLcwcVojz=ewWD7Q@mail.gmail.com>
+ <CAGAP5yK7uwY8eQMxWPoiJM6sgvOCrPd25VcP2tV_xxi3q8YPRQ@mail.gmail.com>
+In-Reply-To: <CAGAP5yK7uwY8eQMxWPoiJM6sgvOCrPd25VcP2tV_xxi3q8YPRQ@mail.gmail.com>
+From: Swapna Sahu <sahuswapna2005@gmail.com>
+Date: Tue, 16 May 2023 11:57:03 +0530
+Message-ID: <CACvksrrbD5nH6ObiSW5G0sDJS5Lo4nwbqmihjCKenm9twODC8A@mail.gmail.com>
+Subject: Re:
+To: Kishan Kumar Sah <kumarkishansah0309@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000c4420305fbc9a963"
+
+--000000000000c4420305fbc9a963
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+On Tue, 16 May, 2023, 11:54 am Kishan Kumar Sah, <
+kumarkishansah0309@gmail.com> wrote:
+
+> bhejo
+>
+>
+> On Tue, May 16, 2023 at 11:53=E2=80=AFAM Swapna Sahu <sahuswapna2005@gmai=
+l.com>
+> wrote:
+>
+>> Hiii
+>>
+>>
+
+--000000000000c4420305fbc9a963
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" cla=
+ss=3D"gmail_attr">On Tue, 16 May, 2023, 11:54 am Kishan Kumar Sah, &lt;<a h=
+ref=3D"mailto:kumarkishansah0309@gmail.com">kumarkishansah0309@gmail.com</a=
+>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0 0=
+ 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr">bhejo=
+<div><br></div></div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=
+=3D"gmail_attr">On Tue, May 16, 2023 at 11:53=E2=80=AFAM Swapna Sahu &lt;<a=
+ href=3D"mailto:sahuswapna2005@gmail.com" target=3D"_blank" rel=3D"noreferr=
+er">sahuswapna2005@gmail.com</a>&gt; wrote:<br></div><blockquote class=3D"g=
+mail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204=
+,204,204);padding-left:1ex"><div dir=3D"auto">Hiii<div dir=3D"auto"><br></d=
+iv></div>
+</blockquote></div>
+</blockquote></div>
+
+--000000000000c4420305fbc9a963--
